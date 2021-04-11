@@ -1,0 +1,70 @@
+header{
+    background-color: cadetblue;
+    padding: 10px;
+}
+nav{
+    background-color: azure;
+    padding: 10px;
+    margin: auto;
+    width: 500px;
+}
+.navegacion{
+    width: 600px;
+    margin: 10px auto;
+    background-color: azure;
+}
+.navegacion ul{
+    list-style: none;
+}
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 10px 15px;
+    color: #353535;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: #CE7D35;
+    transition: all .3s;
+}
+.submenu{
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+section{
+    float: left;
+    width: 74%;
+    background-color: burlywood;
+}
+aside{
+    float: left;
+    width: 26%;
+    background-color: cornsilk;
+}
+footer{
+    background-color: coral;
+    padding: 10px;
+}
+.contenedor::after{
+    content: "";
+    display: block;
+    clear: both;
+}
